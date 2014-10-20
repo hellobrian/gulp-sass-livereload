@@ -1,0 +1,7 @@
+body {
+  background: black; }
+  body h1 {
+    font-family: sans-serif;
+    color: white; }
+    body h1:hover {
+      background: red; }
