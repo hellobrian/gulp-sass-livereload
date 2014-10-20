@@ -4,4 +4,5 @@ body {
     font-family: sans-serif;
     color: white; }
     body h1:hover {
-      background: red; }
+      background: red;
+      text-decoration: underline; }
