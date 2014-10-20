@@ -1,5 +1,7 @@
+@import "_colors";
+
 body {
-  background: black;
+  background: $blue;
   h1 {
     font-family: sans-serif;
     color: white;
