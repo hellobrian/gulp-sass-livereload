@@ -9,7 +9,7 @@ var sourcePaths = {
 };
 
 var distPaths = {
-  styles: 'css'
+  styles: 'public/css'
 };
 
 var server = {
@@ -27,7 +27,7 @@ gulp.task('sass', function () {
 
 // Run a local webserver 
 gulp.task('webserver', function() {
-  gulp.src('.')
+  gulp.src('public')
     .pipe(webserver({
       host: server.host, 
       port: server.port, 
