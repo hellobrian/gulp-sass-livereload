@@ -2,7 +2,6 @@ var gulp      = require('gulp');
 var plumber   = require('gulp-plumber');
 var sass      = require('gulp-sass');
 var webserver = require('gulp-webserver');
-var opn       = require('opn');
 
 var sourcePaths = {
   styles: ['scss/**/*.scss']
@@ -27,7 +26,7 @@ gulp.task('sass', function () {
 
 // Run a local webserver 
 gulp.task('webserver', function() {
-  gulp.src('public')
+  gulp.src('.')
     .pipe(webserver({
       host: server.host, 
       port: server.port, 
@@ -47,5 +46,4 @@ gulp.task('watch', function() {
 
 gulp.task('build', ['sass']);
 
-gulp.task('default', ['build', 'webserver', 'watch', 'openbrowser']);
-
+gulp.task('default', ['build', 'webserver', 'watch']);
